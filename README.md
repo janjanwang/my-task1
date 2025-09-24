@@ -44,7 +44,7 @@ To handle paragraphs marked by line breaks within a paragraph, you can split the
 import os
 from docx import Document
 
-directory = "D:/10_Lidanli/He_Fabing"  # specify your directory path
+directory = "D:/10_students"  # specify your directory path
 
 for subdir, dirs, files in os.walk(directory):
     for file in files:
