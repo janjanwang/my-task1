@@ -1,4 +1,4 @@
-# As a teacher, after you have marked some scores or made some comments on students' original word documents, however, you do not want to share with them at the moment because you may want to arrange a peer assessment or discussions on their work in student-led groups--they can express their opinions and dicussions without your influence. Therefore, you can delete the paragraph by the following procedures, using (2) or (3):
+As a teacher, after marking students’ writing-- whether by assigning scores or adding comments directly to their original Word documents-- you may wish to delay sharing this feedback immediately. This is often to pave the way for peer assessment or student-led group discussions: these activities allow students to exchange opinions, analyze each other’s work, and engage in collaborative dialogue without being influenced by your evaluations. To temporarily remove your marked content (e.g., scores, comments) from the documents before these activities, you can follow the steps below, using either method (2) or (3):
 
 1) Make sure to install python-docx library using pip:
 
