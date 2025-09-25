@@ -1,4 +1,4 @@
-# As a teacher, after marking students’ writing-- whether by assigning scores or adding comments directly to their original Word documents-- you may wish to delay sharing this feedback immediately. This is often to pave the way for peer assessment or student-led group discussions: these activities allow students to exchange opinions, analyze each other’s work, and engage in collaborative dialogue without being influenced by your evaluations. To temporarily remove your marked content (e.g., TeacherMarkedScore, TeacherComments) from the documents before these activities, you can follow the steps below, using either method (2) or (3):
+As a teacher, after marking students’ writing-- whether by assigning scores or adding comments directly to their original Word documents-- you may wish to delay sharing this feedback immediately. This is often to pave the way for peer assessment or student-led group discussions: these activities allow students to exchange opinions, analyze each other’s work, and engage in collaborative dialogue without being influenced by your evaluations. To temporarily remove your marked content (e.g., TeacherMarkedScore, TeacherComments) from the documents before these activities, you can follow the steps below, using either method (2) or (3):
 
 1) Make sure to install python-docx library using pip:
 
@@ -37,7 +37,7 @@ for filename in os.listdir(directory):
         new_doc.save(os.path.join(directory, 'new_'+filename))
 
 
-# Now I encounter a problem with the previous codes. The previous codes worked well with a paragraph. However now I want do remove a paragraph which starts with a line break symbol and then the first words "TeacherComments", and then ends with another line break symbol. The only difference from the previous codes are the paragraph is not marked by paragraphs symbols, instead, marked by line break symbols in .docx. How to do?
+The above codes works well for handling regular paragraphs. You may have an issue if the specific section in the .docx that you want to remove starts with a line break (rather than standard paragraph symbols!) followed by the words "TeacherComments" and ends with another line break. Now you need to modify the codes. 
 
 To handle paragraphs marked by line breaks within a paragraph, you can split the text and check each line. Once you encounter the line that starts with "TeacherComments", you can stop adding the lines to the new document. Here's how you can modify the script:
 
